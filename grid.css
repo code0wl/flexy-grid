@@ -1,0 +1,48 @@
+/* preserve columns in mobile */
+.columns {
+    float: left;
+    width: 100%;
+}
+
+.columns.two.a.preserve	{ width: 50%; }
+
+
+/* desktop */
+@media screen and ( min-width: 641px ) {
+
+	.grid {
+	    margin: 0 auto;
+	    max-width: 960px;
+	    position: relative;
+	    overflow: auto;
+	}
+    
+    .columns.reverse 	{ float: right; }
+
+    .columns.two.a 		{ width: 50%; }
+
+    .columns.three.a    { width: 33.333%; }
+    .columns.three.b    { width: 66.333%; }
+
+    .columns.four.a 	{ width: 25%; }
+    .columns.four.b 	{ width: 50%; }
+    .columns.four.c 	{ width: 75%; }
+
+    .columns.five.a 	{ width: 20%; }
+    .columns.five.b 	{ width: 40%; }
+    .columns.five.c 	{ width: 60%; }
+    .columns.five.d 	{ width: 80%; }
+    
+    .columns.six.a 		{ width: 16.667%; }
+    .columns.six.b 		{ width: 33.333%; }
+    .columns.six.c 		{ width: 50%; }
+    .columns.six.d 		{ width: 66.667%; }
+    .columns.six.e 		{ width: 83.333%; }
+    
+	/* Offset */
+	.columns.offset-a 	{ margin-left: 20%; }
+	.columns.offset-b 	{ margin-left: 40%; }
+	.columns.offset-c 	{ margin-left: 60%; }
+	.columns.offset-d 	{ margin-left: 80%; }
+
+}
