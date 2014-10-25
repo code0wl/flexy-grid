@@ -1,22 +1,23 @@
 /* preserve columns in mobile */
+.grid {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+    overflow: auto;
+}
+
 .columns {
     float: left;
     width: 100%;
 }
 
+/* Preserves classes for mobile */
 .columns.two.a.preserve	{ width: 50%; }
 
 
 /* desktop */
-@media screen and ( min-width: 641px ) {
+@media screen and ( min-width: 786px ) {
 
-	.grid {
-	    margin: 0 auto;
-	    max-width: 960px;
-	    position: relative;
-	    overflow: auto;
-	}
-    
     .columns.reverse 	{ float: right; }
 
     .columns.two.a 		{ width: 50%; }
