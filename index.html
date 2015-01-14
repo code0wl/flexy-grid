@@ -4,42 +4,38 @@
  	<head>
  		<title> Simple mobile first grid </title>
  		<link rel="stylesheet" type="text/css" href="grid.css">
- 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	
 		<!-- Style added for demo purposes --> 
 		<style>
-			html {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 62.5%;
-			}
-
-			body {
-				font-size: 10px;
+			html,body {
+				padding: 0;
+				font-family: arial, sans-serif;
+				margin: 0;
 			}
 
 			h1, h2 {
-				padding: 50px 0 10px 10px;
+				margin: 50px 0 10px 10px;
+				padding: 0;
 			}
 
-			h1 {
-				font-size: 2.5em;
-			}
+			h1 {font-size: 1.5em;}
+			h2 {font-size: 1.2em;}
 
-			h2 {
-				font-size: 2em;
-			}
-
-			.grid article {
+			.site-name article {
 				overflow: auto; /* Always make sure your wrapping container (module classes) has overflow auto for a smooth ride */
-				font-weight: 400;
 			}
 
-			.grid > article p {
+			.site-name > article p {
 				margin: 0;
-				font-size: 1.3em;
+				font-size: .8em;
 				padding: 10px;
 				margin: 5px;
-				background: #f0f0f0;
+				background: #fff;
+			}
+
+			.site-name {
+				background: #f5f5f5;
+				padding: 10px;
 			}
 
 		</style>
@@ -49,205 +45,11 @@
 	<body>
 
 		<div class="grid gutter a">
+			<div class="site-name">
 
-			<h1> Simple mobile first grid </h1>
+				<h1> Simple mobile first grid </h1>
 
-			<article>
-				<div class="columns two a">
-					<p>columns two a</p>
-				</div>
-
-				<div class="columns two a">
-					<p>columns two a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns three a">
-					<p>columns three a</p>
-				</div>
-
-				<div class="columns three a">
-					<p>columns three a</p>
-				</div>
-
-				<div class="columns three a">
-					<p>columns three a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns three a">
-					<p>columns three a</p>
-				</div>
-
-				<div class="columns three a reverse">
-					<p> columns three a reverse </p>
-				</div>
-			</article>
-
-
-			<article>
-				<div class="columns three a">
-					<p>columns three a</p>
-				</div>
-
-				<div class="columns three b">
-					<p>columns three b</p>
-				</div>
-			</article>
-
-
-			<article>
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-
-				<div class="columns four b">
-					<p>columns four b</p>
-				</div>
-
-				<div class="columns four a">
-					<p>columns four a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns four b">
-					<p>columns four a</p>
-				</div>
-
-				<div class="columns four b">
-					<p>columns four b</p>
-				</div>
-			</article>
-
-
-			<article>
-				<div class="columns five a">
-					<p>columns five a</p>
-				</div>
-
-				<div class="columns five a">
-					<p>columns five a</p>
-				</div>
-
-				<div class="columns five a">
-					<p>columns five a</p>
-				</div>
-
-				<div class="columns five a">
-					<p>columns five a</p>
-				</div>
-
-				<div class="columns five a">
-					<p>columns five a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns five b">
-					<p>columns five a</p>
-				</div>
-
-				<div class="columns five c">
-					<p>columns five a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns six b">
-					<p>columns six b</p>
-				</div>
-
-				<div class="columns six c">
-					<p>columns six c</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-			</article>
-
-			<article>
-				<div class="columns six d">
-					<p>columns six d</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-			</article>
-
-			<!-- Offset -->
-			<article>
-				<div class="columns six b offset-a">
-					<p>columns six b offset</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-
-				<div class="columns six a">
-					<p>columns six a</p>
-				</div>
-			</article>
-
-			<!-- Nested -->
-			<article>
-				<h2>Nested</h2>
-				<div class="columns three b">
-					<p>columns three b</p>
-
+				<article>
 					<div class="columns two a">
 						<p>columns two a</p>
 					</div>
@@ -255,57 +57,255 @@
 					<div class="columns two a">
 						<p>columns two a</p>
 					</div>
-				</div>
-			</article>
+				</article>
 
-			<article>
-				<h2>Nested reverse</h2>
-				<div class="columns four c">
-					<p>columns four c</p>
+				<article>
+					<div class="columns three a">
+						<p>columns three a</p>
+					</div>
 
 					<div class="columns three a">
 						<p>columns three a</p>
 					</div>
 
+					<div class="columns three a">
+						<p>columns three a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns three a">
+						<p>columns three a</p>
+					</div>
+
 					<div class="columns three a reverse">
-						<p>columns three a reverse</p>
+						<p> columns three a reverse </p>
 					</div>
-				</div>
-			</article>
+				</article>
 
-			<article>
-				<h2>Preserve mobile columns</h2>
-				<div class="columns two a preserve">
-					<p>columns two a preserve</p>
-				</div>
-				<div class="columns two a preserve">
-					<p>columns two a</p>
-				</div>
-			</article>
 
-			<article>
-				<h2>Preserve mobile columns nested</h2>
-				<div class="columns two a preserve">
-					<p>columns two a preserve</p>
+				<article>
+					<div class="columns three a">
+						<p>columns three a</p>
+					</div>
+
+					<div class="columns three b">
+						<p>columns three b</p>
+					</div>
+				</article>
+
+
+				<article>
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+
+					<div class="columns four b">
+						<p>columns four b</p>
+					</div>
+
+					<div class="columns four a">
+						<p>columns four a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns four b">
+						<p>columns four a</p>
+					</div>
+
+					<div class="columns four b">
+						<p>columns four b</p>
+					</div>
+				</article>
+
+
+				<article>
+					<div class="columns five a">
+						<p>columns five a</p>
+					</div>
+
+					<div class="columns five a">
+						<p>columns five a</p>
+					</div>
+
+					<div class="columns five a">
+						<p>columns five a</p>
+					</div>
+
+					<div class="columns five a">
+						<p>columns five a</p>
+					</div>
+
+					<div class="columns five a">
+						<p>columns five a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns five b">
+						<p>columns five a</p>
+					</div>
+
+					<div class="columns five c">
+						<p>columns five a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns six b">
+						<p>columns six b</p>
+					</div>
+
+					<div class="columns six c">
+						<p>columns six c</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="columns six d">
+						<p>columns six d</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+				</article>
+
+				<!-- Offset -->
+				<article>
+					<div class="columns six b offset-a">
+						<p>columns six b offset</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+
+					<div class="columns six a">
+						<p>columns six a</p>
+					</div>
+				</article>
+
+				<!-- Nested -->
+				<article>
+					<h2>Nested</h2>
+					<div class="columns three b">
+						<p>columns three b</p>
+
+						<div class="columns two a">
+							<p>columns two a</p>
+						</div>
+
+						<div class="columns two a">
+							<p>columns two a</p>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<h2>Nested reverse</h2>
+					<div class="columns four c">
+						<p>columns four c</p>
+
+						<div class="columns three a">
+							<p>columns three a</p>
+						</div>
+
+						<div class="columns three a reverse">
+							<p>columns three a reverse</p>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<h2>Preserve mobile columns</h2>
 					<div class="columns two a preserve">
 						<p>columns two a preserve</p>
 					</div>
+					<div class="columns two a preserve">
+						<p>columns two a</p>
+					</div>
+				</article>
 
+				<article>
+					<h2>Preserve mobile columns nested</h2>
 					<div class="columns two a preserve">
 						<p>columns two a preserve</p>
-					</div>
-				</div>
-				<div class="columns two a preserve">
-					<p>columns two a preserve</p>
-					<div class="columns two a preserve">
-						<p>columns two a preserve</p>
-					</div>
+						<div class="columns two a preserve">
+							<p>columns two a preserve</p>
+						</div>
 
+						<div class="columns two a preserve">
+							<p>columns two a preserve</p>
+						</div>
+					</div>
 					<div class="columns two a preserve">
 						<p>columns two a preserve</p>
+						<div class="columns two a preserve">
+							<p>columns two a preserve</p>
+						</div>
+
+						<div class="columns two a preserve">
+							<p>columns two a preserve</p>
+						</div>
 					</div>
-				</div>
-			</article>
+				</article>
+
+			</div>
 		</div>
+
 	</body>
 </html>
