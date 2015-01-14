@@ -1,14 +1,25 @@
-/* preserve columns in mobile */
 .grid {
-    margin: 0 auto;
-    max-width: 960px;
-    position: relative;
-    overflow: auto;
+	margin: 0 auto;
+	max-width: 960px;
+	position: relative;
 }
 
+/* preserve columns in mobile */
 .columns {
     float: left;
     width: 100%;
+	box-sizing: border-box;
+}
+
+/* horizontal gutters */
+.grid.gutter.a .columns { padding: 5px }
+.grid.gutter.b .columns { padding: 10px }
+.grid.gutter.c .columns { padding: 15px }
+
+
+/* reset nested gutters */
+.grid.gutter .columns > .columns {
+	padding: 0;
 }
 
 /* Preserves classes for mobile */
