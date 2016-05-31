@@ -1,5 +1,6 @@
 #Flexy-grid
----------------
+
+<img src="screen.png" title="screenshot of grid" />
 
 A non-bloated simple mobile first css grid for creating new projects. Supports Internet Explorer Edge and others.
 
