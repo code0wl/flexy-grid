@@ -43,10 +43,4 @@
     .flexy-col.six.d 	{ flex-basis: 66.666667%; max-width: 66.666667%; }
     .flexy-col.six.e 	{ flex-basis: 83.333333%; max-width: 83.333333%; }
 
-    /* Offset */
-    .flexy-col.offset-a	{ margin-left: 20%; }
-    .flexy-col.offset-b	{ margin-left: 40%; }
-    .flexy-col.offset-c	{ margin-left: 60%; }
-    .flexy-col.offset-d	{ margin-left: 80%; }
-
 }
