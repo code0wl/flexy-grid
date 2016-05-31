@@ -2,16 +2,17 @@
 <html>
 
 <head>
-    <title> Simple mobile first grid </title>
+    <title> The Flexy grid </title>
     <link href="docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/grid.css">
+    <link rel="stylesheet" href="src/flexy-grid.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
     <div class="site-name">
-        <h1> The Flexy grid <small>A no fluff minimalistic modern layouts thanks to flex-box</small></h1>
+        <h1> The Flexy grid <small>A no fluff minimalistic modern grid system thanks to flex-box</small></h1>
 
         <article class="flexy-row flexy-space-full">
             <div class="flexy-col two a">
@@ -187,9 +188,26 @@
         </article>
 
         <!-- Offset -->
-        <article class="flexy-row flexy-space-full">
-            <div class="flexy-col six b offset-a">
-                <p>flexy-col six b offset</p>
+        <h2>Spread</h2>
+        <article class="flexy-row spread flexy-space-full">
+            <div class="flexy-col six b">
+                <p>flexy-col six b</p>
+            </div>
+
+            <div class="flexy-col six a">
+                <p>flexy-col six a</p>
+            </div>
+
+            <div class="flexy-col six a">
+                <p>flexy-col six a</p>
+            </div>
+        </article>
+
+        <!-- center -->
+        <h2>Center</h2>
+        <article class="flexy-row center flexy-space-full">
+            <div class="flexy-col six b">
+                <p>flexy-col six b</p>
             </div>
 
             <div class="flexy-col six a">
@@ -206,13 +224,14 @@
         <article class="flexy-row flexy-space-full">
             <div class="flexy-col three b">
                 <p>flexy-col three b</p>
+                <div class="flexy-row">
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a</p>
+                    </div>
 
-                <div class="flexy-col two a">
-                    <p>flexy-col two a</p>
-                </div>
-
-                <div class="flexy-col two a">
-                    <p>flexy-col two a</p>
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a</p>
+                    </div>
                 </div>
             </div>
         </article>
@@ -222,50 +241,59 @@
             <div class="flexy-col four c">
                 <p>flexy-col four c</p>
 
+                <div class="flexy-row reverse">
+                    <div class="flexy-col three a">
+                        <p>flexy-col three a</p>
+                    </div>
 
-                <div class="flexy-col three a">
-                    <p>flexy-col three a</p>
-                </div>
-
-                <div class="flexy-col three a reverse">
-                    <p>flexy-col three a reverse</p>
+                    <div class="flexy-col three a reverse">
+                        <p>flexy-col three a reverse</p>
+                    </div>
                 </div>
 
             </div>
         </article>
 
         <h2>Preserve mobile columns</h2>
-        <article class="flexy-row flexy-space-full">
-            <div class="flexy-col two a preserve">
+        <article class="flexy-row preserve flexy-space-full">
+            <div class="flexy-col two a">
                 <p>flexy-col two a preserve</p>
             </div>
-            <div class="flexy-col two a preserve">
+            <div class="flexy-col two a">
                 <p>flexy-col two a</p>
             </div>
         </article>
 
         <h2>Preserve mobile flexy-col nested</h2>
-        <article class="flexy-row flexy-space-full">
+        <article class="flexy-row flexy-space-full preserve">
+
             <div class="flexy-col two a preserve">
                 <p>flexy-col two a preserve</p>
-                <div class="flexy-col two a preserve">
-                    <p>flexy-col two a preserve</p>
-                </div>
 
-                <div class="flexy-col two a preserve">
-                    <p>flexy-col two a preserve</p>
+                <div class="flexy-row preserve">
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a preserve</p>
+                    </div>
+
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a preserve</p>
+                    </div>
                 </div>
             </div>
-            <div class="flexy-col two a preserve">
+
+            <div class="flexy-col two a">
                 <p>flexy-col two a preserve</p>
-                <div class="flexy-col two a preserve">
-                    <p>flexy-col two a preserve</p>
-                </div>
+                <div class="flexy-row preserve">
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a preserve</p>
+                    </div>
 
-                <div class="flexy-col two a preserve">
-                    <p>flexy-col two a preserve</p>
+                    <div class="flexy-col two a">
+                        <p>flexy-col two a preserve</p>
+                    </div>
                 </div>
             </div>
+
         </article>
 
     </div>

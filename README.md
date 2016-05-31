@@ -1,12 +1,8 @@
-simple-mobile-first-grid
+#Flexy-grid
 ========================
 
-A non-bloated simple mobile first css grid for creating new projects. Supports Internet Explorer 8+ and latest browsers
+A non-bloated simple mobile first css grid for creating new projects. Supports Internet Explorer Edge and others.
 
-Please check the index.html for a sample of the grid.
+Please check the index.html for a sample of the grid. As I am horrible at open source documentation :P. I will get back to this soon
 
-Main idea behind this grid is to keep the containers with no styling except for the width and let them just stack. While the child elements are a the modules that take up the space in the layout.
-This way you can ensure your modules are always a 100% and can fluidly adapt to your layout.
-
-Roadmap:
-A one page demo for a random theme.
+NOTE: There are no-css prefixes as browsers are currently stepping away from this idea. If you want to have the grid prefixed, feel free to use any build tool that will concat your css.

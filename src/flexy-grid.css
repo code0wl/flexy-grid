@@ -1,24 +1,29 @@
-.flexy-row { display: flex; flex-direction: column }
+.flexy-row { display: flex; flex-direction: column; }
+
+.flexy-row.preserve { flex-direction: row; }
 
 /* Gutter spaces */
 .flexy-row.flexy-space-half .flexy-col { margin: .5rem; }
 .flexy-row.flexy-space-full .flexy-col { margin: 1rem; }
 .flexy-row.flexy-space-double .flexy-col { margin: 2rem; }
+.flexy-row[class*="flexy-space"] .flexy-row .flexy-col { margin: 0; }
 
 /* Reverse order by using flex native feature */
 .flexy-row.reverse { justify-content: space-between; }
 
+.flexy-row.flexy-col { overflow: auto }
+.flexy-row.spread { justify-content: space-between }
+.flexy-row.center { justify-content: center }
+
 /* Preserves classes for mobile */
-.columns.two.a.preserve	{ flex-basis: 50%; max-width: 50%;}
+.preserve .flexy-col.two.a { flex-basis: 50%; max-width: 50%; }
 
 /* desktop: Oppionated desktop breakpoint */
 @media screen and ( min-width: 786px ) {
 
     .flexy-row { flex-direction: row }
 
-    .flexy-col.reverse	{  }
-
-    .flexy-col.two.a		{ flex-basis: 50%; max-width: 50%; }
+    .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
 
     .flexy-col.three.a	{ flex-basis: 33.333333%; max-width: 33.333333%; }
     .flexy-col.three.b	{ flex-basis: 66.333333%; max-width: 66.333333%: }
@@ -32,11 +37,11 @@
     .flexy-col.five.c 	{ flex-basis: 60%; max-width: 60%; }
     .flexy-col.five.d 	{ flex-basis: 80%; max-width: 80%; }
 
-    .flexy-col.six.a 		{ flex-basis: 16.666667%; max-width: 16.666667%; }
-    .flexy-col.six.b 		{ flex-basis: 33.333333%; max-width: 33.333333%; }
-    .flexy-col.six.c 		{ flex-basis: 50%; max-width: 50%; }
-    .flexy-col.six.d 		{ flex-basis: 66.666667%; max-width: 66.666667%; }
-    .flexy-col.six.e 		{ flex-basis: 83.333333%; max-width: 83.333333%; }
+    .flexy-col.six.a 	{ flex-basis: 16.666667%; max-width: 16.666667%; }
+    .flexy-col.six.b 	{ flex-basis: 33.333333%; max-width: 33.333333%; }
+    .flexy-col.six.c 	{ flex-basis: 50%; max-width: 50%; }
+    .flexy-col.six.d 	{ flex-basis: 66.666667%; max-width: 66.666667%; }
+    .flexy-col.six.e 	{ flex-basis: 83.333333%; max-width: 83.333333%; }
 
     /* Offset */
     .flexy-col.offset-a	{ margin-left: 20%; }
