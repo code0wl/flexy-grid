@@ -1,0 +1,34 @@
+html,body {
+    font-family: sans-serif;
+    background: #e54d42;
+}
+
+small {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+h1, h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    padding: 2rem 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 1.2em;}
+
+article {
+    margin: 1rem;
+}
+
+.site-name article {
+    background: #b94138;
+}
+
+article p {
+    padding: 1.5rem;
+    background: #ecf0f1;
+}
