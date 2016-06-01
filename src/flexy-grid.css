@@ -1,5 +1,5 @@
+/* Rows */
 .flexy-row { display: flex; flex-direction: column; }
-
 .flexy-row.preserve { flex-direction: row; }
 
 /* Gutter spaces */
@@ -14,6 +14,10 @@
 .flexy-row.flexy-col { overflow: auto }
 .flexy-row.spread { justify-content: space-between }
 .flexy-row.center { justify-content: center }
+
+/* Cols */
+.flexy-col {flex-basis: 100%; max-width: 100%;}
+.flexy-col:last-child {flex-grow: 1}
 
 /* Preserves classes for mobile */
 .preserve .flexy-col.two.a { flex-basis: 50%; max-width: 50%; }
