@@ -29,9 +29,9 @@
     .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
 
     .flexy-col.three.a	{ flex-basis: 33.333333%; max-width: 33.333333%; }
-    .flexy-col.three.b	{ flex-basis: 66.333333%; max-width: 66.333333%: }
+    .flexy-col.three.b	{ flex-basis: 66.333333%; max-width: 66.333333%; }
 
-    .flexy-col.four.a 	{ flex-basis: 25%; max-width: 25; }
+    .flexy-col.four.a 	{ flex-basis: 25%; max-width: 25%; }
     .flexy-col.four.b 	{ flex-basis: 50%; max-width: 50%; }
     .flexy-col.four.c 	{ flex-basis: 75%; max-width: 75%; }
 
