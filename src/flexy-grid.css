@@ -1,6 +1,6 @@
 /* Rows */
-.flexy-row          { display: flex; flex-direction: column; }
-.flexy-row.preserve { flex-direction: row; }
+.flexy-row          { display: flex; flex-direction: column; overflow: hidden; }
+.flexy-row.preserve { flex-direction: row;}
 
 /* Gutter spaces */
 .flexy-row.flexy-space-half .flexy-col                 { margin: .5rem; }
@@ -25,7 +25,6 @@
 @media screen and ( min-width: 786px ) {
 
     .flexy-row { flex-direction: row }
-
     .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
 
     .flexy-col.three.a	{ flex-basis: 33.333333%; max-width: 33.333333%; }
