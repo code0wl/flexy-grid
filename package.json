@@ -1,0 +1,25 @@
+{
+  "name": "flexy-grid-css",
+  "version": "1.0.0",
+  "description": "A lean mean flex gridding machine",
+  "main": "src/flexy-grid.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code0wl/simple-mobile-first-grid.git"
+  },
+  "keywords": [
+    "flex",
+    "box",
+    "flexbox",
+    "grid"
+  ],
+  "author": "Oscar Lodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code0wl/simple-mobile-first-grid/issues"
+  },
+  "homepage": "https://github.com/code0wl/simple-mobile-first-grid#readme"
+}
