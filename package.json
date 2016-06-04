@@ -1,8 +1,8 @@
 {
   "name": "flexy-grid-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lean mean flex gridding machine",
-  "main": "src/flexy-grid.css",
+  "main": "./src/flexy-grid.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/code0wl/simple-mobile-first-grid/issues"
   },
-  "homepage": "https://github.com/code0wl/simple-mobile-first-grid#readme"
+  "homepage": "https://github.com/code0wl/simple-mobile-first-grid#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0"
+  }
 }

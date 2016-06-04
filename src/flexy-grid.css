@@ -22,7 +22,7 @@
 .preserve .flexy-col.two.a { flex-basis: 50%; max-width: 50%; }
 
 /* desktop: Oppionated desktop breakpoint */
-@media screen and ( min-width: 786px ) {
+@media screen and ( min-width: 768px ) {
 
     .flexy-row { flex-direction: row }
     .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
