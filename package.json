@@ -1,6 +1,6 @@
 {
   "name": "flexy-grid-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lean mean flex gridding machine",
   "main": "./src/flexy-grid.css",
   "scripts": {

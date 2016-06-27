@@ -7,6 +7,7 @@
 .flexy-row.flexy-space-full .flexy-col                 { margin: 1rem; }
 .flexy-row.flexy-space-double .flexy-col               { margin: 2rem; }
 .flexy-row[class*="flexy-space"] .flexy-row .flexy-col { margin: 0; }
+.flexy-row.wrap                                        { flex-wrap: wrap; }
 
 /* Reverse order by using flex native feature */
 .flexy-row.reverse    { justify-content: space-between; }
@@ -24,25 +25,25 @@
 /* desktop: Oppionated desktop breakpoint */
 @media screen and ( min-width: 768px ) {
 
-    .flexy-row { flex-direction: row }
-    .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
+  .flexy-row { flex-direction: row }
+  .flexy-col.two.a	{ flex-basis: 50%; max-width: 50%; }
 
-    .flexy-col.three.a	{ flex-basis: 33.333333%; max-width: 33.333333%; }
-    .flexy-col.three.b	{ flex-basis: 66.333333%; max-width: 66.333333%; }
+  .flexy-col.three.a	{ flex-basis: 33.333333%; max-width: 33.333333%; }
+  .flexy-col.three.b	{ flex-basis: 66.333333%; max-width: 66.333333%; }
 
-    .flexy-col.four.a 	{ flex-basis: 25%; max-width: 25%; }
-    .flexy-col.four.b 	{ flex-basis: 50%; max-width: 50%; }
-    .flexy-col.four.c 	{ flex-basis: 75%; max-width: 75%; }
+  .flexy-col.four.a 	{ flex-basis: 25%; max-width: 25%; }
+  .flexy-col.four.b 	{ flex-basis: 50%; max-width: 50%; }
+  .flexy-col.four.c 	{ flex-basis: 75%; max-width: 75%; }
 
-    .flexy-col.five.a 	{ flex-basis: 20%; max-width: 20%; }
-    .flexy-col.five.b 	{ flex-basis: 40%; max-width: 40%; }
-    .flexy-col.five.c 	{ flex-basis: 60%; max-width: 60%; }
-    .flexy-col.five.d 	{ flex-basis: 80%; max-width: 80%; }
+  .flexy-col.five.a 	{ flex-basis: 20%; max-width: 20%; }
+  .flexy-col.five.b 	{ flex-basis: 40%; max-width: 40%; }
+  .flexy-col.five.c 	{ flex-basis: 60%; max-width: 60%; }
+  .flexy-col.five.d 	{ flex-basis: 80%; max-width: 80%; }
 
-    .flexy-col.six.a 	{ flex-basis: 16.666667%; max-width: 16.666667%; }
-    .flexy-col.six.b 	{ flex-basis: 33.333333%; max-width: 33.333333%; }
-    .flexy-col.six.c 	{ flex-basis: 50%; max-width: 50%; }
-    .flexy-col.six.d 	{ flex-basis: 66.666667%; max-width: 66.666667%; }
-    .flexy-col.six.e 	{ flex-basis: 83.333333%; max-width: 83.333333%; }
+  .flexy-col.six.a 	{ flex-basis: 16.666667%; max-width: 16.666667%; }
+  .flexy-col.six.b 	{ flex-basis: 33.333333%; max-width: 33.333333%; }
+  .flexy-col.six.c 	{ flex-basis: 50%; max-width: 50%; }
+  .flexy-col.six.d 	{ flex-basis: 66.666667%; max-width: 66.666667%; }
+  .flexy-col.six.e 	{ flex-basis: 83.333333%; max-width: 83.333333%; }
 
 }
